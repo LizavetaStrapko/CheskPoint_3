@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project3", "Project3\Project3.csproj", "{86D054B9-74EF-4325-827C-E7AA443E2C40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATS", "ATS\ATS.csproj", "{2A61914F-DAD8-45D5-91E3-C54A2092B4E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATSModel", "ATSModel\ATSModel.csproj", "{4BD849C3-E1C1-47FD-AC86-67CFA53B3B52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86D054B9-74EF-4325-827C-E7AA443E2C40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86D054B9-74EF-4325-827C-E7AA443E2C40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86D054B9-74EF-4325-827C-E7AA443E2C40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86D054B9-74EF-4325-827C-E7AA443E2C40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A61914F-DAD8-45D5-91E3-C54A2092B4E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A61914F-DAD8-45D5-91E3-C54A2092B4E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A61914F-DAD8-45D5-91E3-C54A2092B4E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A61914F-DAD8-45D5-91E3-C54A2092B4E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BD849C3-E1C1-47FD-AC86-67CFA53B3B52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BD849C3-E1C1-47FD-AC86-67CFA53B3B52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BD849C3-E1C1-47FD-AC86-67CFA53B3B52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BD849C3-E1C1-47FD-AC86-67CFA53B3B52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
