@@ -51,11 +51,11 @@
     <Compile Include="ATS\Respond.cs" />
     <Compile Include="ATS\Station.cs" />
     <Compile Include="ATS\Terminal.cs" />
-    <Compile Include="BilS\Account.cs" />
-    <Compile Include="BilS\Client.cs" />
-    <Compile Include="BilS\Contract.cs" />
-    <Compile Include="BilS\Interfaces\IAccount.cs" />
-    <Compile Include="BilS\Interfaces\IContract.cs" />
+    <Compile Include="BS\Account.cs" />
+    <Compile Include="BS\Client.cs" />
+    <Compile Include="BS\Contract.cs" />
+    <Compile Include="BS\Interfaces\IAccount.cs" />
+    <Compile Include="BS\Interfaces\IContract.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -10,6 +10,6 @@ namespace Project3.ATS.Interfaces
 
         event EventHandler<PortState> StateChanged;
 
-        void RegisterEventHandlersForTerminal(ITerminal terminal);
+        void RegisterEventsForTerminal(ITerminal terminal);
     }
 }
