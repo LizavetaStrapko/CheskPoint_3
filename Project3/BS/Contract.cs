@@ -1,12 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Project3.ATS;
+using Project3.BilS.Interfaces;
+using System;
 
 namespace Project3.BilS
 {
-    class Contract
+    public class Contract : IContract
     {
+        public Client Client { get; }
+
+        public PhoneNumber PhoneNumber { get; }
+
+        public DateTime AcceptedDate { get; }
+
+        public IAccount Account { get; set; }
+
+        public Contract(Client client, PhoneNumber phoneNumber, DateTime acceptedDate)
+        {
+            Client = client;
+            PhoneNumber = phoneNumber;
+            AcceptedDate = acceptedDate;
+        }
+    
     }
 }

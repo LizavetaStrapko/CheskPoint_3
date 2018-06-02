@@ -2,7 +2,7 @@
 
 namespace Project3.ATS.Interfaces
 {
-    interface IStation : IEventsClear
+    public interface IStation : IEventsClear
     {
         event EventHandler<CallInfo> CallInfoAdded;
 

@@ -2,7 +2,7 @@
 
 namespace Project3.ATS
 {
-    class CallInfo
+    public class CallInfo : EventArgs
     {
         public PhoneNumber Caller { get; set; }
 

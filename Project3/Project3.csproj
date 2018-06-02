@@ -52,10 +52,15 @@
     <Compile Include="ATS\Station.cs" />
     <Compile Include="ATS\Terminal.cs" />
     <Compile Include="BS\Account.cs" />
+    <Compile Include="BS\BillingSystem.cs" />
+    <Compile Include="BS\CallDetailing.cs" />
     <Compile Include="BS\Client.cs" />
     <Compile Include="BS\Contract.cs" />
     <Compile Include="BS\Interfaces\IAccount.cs" />
     <Compile Include="BS\Interfaces\IContract.cs" />
+    <Compile Include="BS\Interfaces\ITarif.cs" />
+    <Compile Include="BS\Statistics.cs" />
+    <Compile Include="BS\Tarif.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

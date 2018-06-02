@@ -2,7 +2,7 @@
 
 namespace Project3.ATS.Interfaces
 {
-    interface IPort : IEventsClear
+    public interface IPort : IEventsClear
     {
         PortState State { get; set; }
 

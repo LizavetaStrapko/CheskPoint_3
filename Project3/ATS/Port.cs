@@ -10,12 +10,13 @@ namespace Project3.ATS
         Off
     }
 
-    class Port : IPort
+    public class Port : IPort
     {
         private PortState _state = PortState.Off;
+
         public PortState State
         {
-            get
+            get 
             {
                 return _state;
             }
@@ -30,21 +31,23 @@ namespace Project3.ATS
 
         public void EventsClear()
         {
-            this.StateChanged = null;
-            this.StateChanging = null;
+            StateChanged = null;
+            StateChanging = null;
         }
 
         public event EventHandler<PortState> StateChanging;
+
         public event EventHandler<PortState> StateChanged;
+
         public void RegisterEventsForTerminal(ITerminal terminal)
         {
-            terminal.Plugging += (sender, args) => { this.State = PortState.Free; };
-            terminal.UnPlugging += (sender, args) => { this.State = PortState.Off; };
+            terminal.Plugging += (sender, args) => { State = PortState.Free; };
+            terminal.UnPlugging += (sender, args) => { State = PortState.Off; };
             terminal.OutConnection += (sender, request) =>
             {
-                if (request.Code == Request.OutcomingCall && this.State == PortState.Free)
+                if (request.Code == Request.OutcomingCall && State == PortState.Free)
                 {
-                    this.State = PortState.Busy;
+                    State = PortState.Busy;
                 }
             };
         }
@@ -53,10 +56,10 @@ namespace Project3.ATS
         {
             StateChanging?.Invoke(sender, e);
         }
+
         protected virtual void OnStateChanged(object sender, PortState e)
         {
             StateChanged?.Invoke(sender, e);
         }
-
     }
 }

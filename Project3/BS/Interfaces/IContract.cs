@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Project3.ATS;
+using System;
 
 namespace Project3.BilS.Interfaces
 {
-    interface IContract
+    public interface IContract
     {
+        Client Client { get; }
+        PhoneNumber PhoneNumber { get; }
+        DateTime AcceptedDate { get; }
+        IAccount Account { get; }
     }
 }

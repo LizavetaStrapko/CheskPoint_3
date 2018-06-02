@@ -1,6 +1,6 @@
 ﻿namespace Project3.ATS.Interfaces
 {
-    interface IEventsClear
+    public interface IEventsClear
     {
         void EventsClear();
     }

@@ -2,18 +2,18 @@
 
 namespace Project3.ATS
 {
-    class PhoneNumber : IEquatable<PhoneNumber>
+    public struct PhoneNumber : IEquatable<PhoneNumber>
     {
         public PhoneNumber(string phoneNumber)
         {
-            this.Value = phoneNumber;
+            Value = phoneNumber;
         }
 
         public string Value { get; }
 
         public bool Equals(PhoneNumber other)
         {
-            return this.Value == other.Value;
+            return Value == other.Value;
         }
 
         public override bool Equals(object obj)
