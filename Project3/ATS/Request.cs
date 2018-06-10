@@ -24,8 +24,8 @@
         public override string ToString()
         {
             string res = "Request:";
-            res += " Source: " + Caller;
-            res += " Target: " + Receiver;
+            res += " Caller: " + Caller;
+            res += " Receiver: " + Receiver;
             res += " Code: " + Code;
             return res;
         }

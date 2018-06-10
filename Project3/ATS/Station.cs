@@ -15,7 +15,6 @@ namespace Project3.ATS
 
         private ICollection<CallInfo> _callCollection;
 
-        //Коллекция пар порт-терминал
         private IDictionary<IPort, ITerminal> _portMap;
 
         public Station(ICollection<IPort> ports, ICollection<ITerminal> terminals)
@@ -79,7 +78,6 @@ namespace Project3.ATS
                 _ports.Add(port);
         }
 
-        //Смотрит есть ли свободный терминал в портмэп, где собраны пары порт-терминал
         public void Add(ITerminal terminal)
         {
             var freePort = _ports.Except(_portMap.Keys).FirstOrDefault();

@@ -78,22 +78,30 @@ namespace Project3.ATS
         #region 
         //EVENTS
         public event EventHandler<PhoneNumber> PhoneChanged;
+
         public event EventHandler Plugging;
+
         public event EventHandler UnPlugging;
+
         public event EventHandler Online;
+
         public event EventHandler Offline;
 
         //terminal connect to station
         public event EventHandler<Request> OutConnection;
+        
         //station connect to terminal
         public event EventHandler<Request> IncomConnection;
+        
         //terminal respond to station
         public event EventHandler<Respond> IncomRespond;
 
         //dialog begin
         public event EventHandler<Request> CallAccepted;
+        
         //interrupt conection
         public event EventHandler<Request> InterruptConnection;
+        
         //drop connetion
         public event EventHandler<Request> DropConnection;
 
@@ -119,6 +127,7 @@ namespace Project3.ATS
             Online?.Invoke(sender, args);
             IsOnline = true;
         }
+
         protected virtual void OnOffline(object sender, EventArgs args)
         {
             if (IsOnline)
