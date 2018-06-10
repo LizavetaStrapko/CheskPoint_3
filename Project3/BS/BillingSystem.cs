@@ -35,11 +35,11 @@ namespace Project3.BS
             if (toAccount == null) return;
             double inCost = toAccount.AddIncomingMinutes(callInfo.Duration.TotalMinutes);
 
-            AddCallStatistic(fromAccount, new CallDetailing(callInfo, outCost));
-            AddCallStatistic(toAccount, new CallDetailing(callInfo, inCost));
+            AddCallDetailing(fromAccount, new CallDetailing(callInfo, outCost));
+            AddCallDetailing(toAccount, new CallDetailing(callInfo, inCost));
         }
 
-        public void AddCallStatistic(IAccount account, CallDetailing callDetailing)
+        public void AddCallDetailing(IAccount account, CallDetailing callDetailing)
         {
             _callDetailing[account].Add(callDetailing);
         }

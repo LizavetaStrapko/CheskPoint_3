@@ -121,7 +121,7 @@ namespace Project3.ATS
 
         protected virtual void OnCallInfoAdded(object sender, CallInfo e)
         {
-            CallInfoAdded?.Invoke(sender, e);
+            CallInfoAdded?.Invoke(sender, e);      
         }
 
         protected void RegisterOutgoingRequest(object sender, Request request)
